@@ -1,0 +1,9 @@
+<div class="person">
+  <div class="person__name">{{ person.firstName }} {{ person.lastName }}</div>
+  <div class="person__email">{{ person.email }}</div>
+  <div class="person__id">{{ person.id }}</div>
+  <br>
+  <div>
+    <span (click)="changePersonName(person)">CHANGE NAME</span>
+  </div>
+</div>

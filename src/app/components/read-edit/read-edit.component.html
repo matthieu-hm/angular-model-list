@@ -1,0 +1,16 @@
+<h2>read-edit!</h2>
+
+<div>
+  <span (click)="addPerson()">ADD</span>
+</div>
+<br>
+
+<ul class="person-list">
+  <!-- <li class="person-list__item" *ngFor="let person of personList.list" > -->
+  <li class="person-list__item" *ngFor="let person of personList" >
+    <app-person-editor [person]="person"></app-person-editor>
+    <div>
+      <span (click)="removePerson(person)">REMOVE</span>
+    </div>
+  </li>
+</ul>

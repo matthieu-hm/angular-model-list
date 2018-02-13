@@ -1,0 +1,10 @@
+<h2>read-only!</h2>
+
+<ul class="person-list">
+  <!-- <li class="person-list__item person" *ngFor="let person of personList.list"> -->
+  <li class="person-list__item person" *ngFor="let person of personList">
+    <div class="person__name">{{ person.firstName }} {{ person.lastName }}</div>
+    <div class="person__email">{{ person.email }}</div>
+    <div class="person__id">{{ person.id }}</div>
+  </li>
+</ul>

@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+.person-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  &__item {
+    margin-bottom: 20px;
+  }
+}
+
+.person {
+  &__name {
+    font-weight: bold;
+  }
+
+  &__email {
+    color: grey;
+  }
+
+  &__id {
+    color: grey;
+    font-size: 80%;
+  }
+}
